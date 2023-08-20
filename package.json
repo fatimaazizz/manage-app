@@ -1,14 +1,17 @@
-{
+{ "homepage": "http://fatimaazizz.github.io/manage-app",
   "name": "kevin-website-design",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d bulid",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
   },
   "devDependencies": {
+    "gh-pages": "^6.0.0",
     "vite": "^3.1.0"
   }
 }
